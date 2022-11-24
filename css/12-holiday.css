@@ -1,0 +1,65 @@
+body{
+    background-color: #AA3F39;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav-links{
+    float: left;
+}
+.nav-links a{
+    display: block;
+    color: #AA3F39;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    background-color: #111;
+}
+.title{
+    color: #313A75;
+    font-weight: bold;
+    margin-top:20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+main{
+    margin:30px;
+    background-color: #313A75;
+}
+.scary-img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20%;
+    padding-bottom: 15px;
+      
+}
+.main-header{
+    color:#AA3F39;
+    text-align: center;
+    padding-top: 40px;
+}
+.img-caption{
+    background-color: white;
+    color: #AA3F39;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.embedded-video{
+    margin-top:30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}

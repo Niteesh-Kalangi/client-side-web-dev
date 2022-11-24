@@ -1,0 +1,32 @@
+.navbar li { 
+    margin-right: 15px;
+  }
+  .navbar a:hover {
+    font-style: bold;
+  }
+
+
+body{
+    background-color: #9F4900;
+    background-image: url("../img/thanksgiving-background.png");
+}
+
+.head{
+    background-color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #F5821F;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+p{
+    font-size: 22px;
+}
+#fadein {
+    opacity:0;
+}

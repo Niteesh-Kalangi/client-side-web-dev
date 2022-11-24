@@ -1,0 +1,31 @@
+body {
+    background-color: #322f78;
+    margin: 0px;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #cf9257;
+}
+
+h1 {
+    color: #d1ec8c;
+}
+
+nav {
+    background-color: black;
+    color:white;
+    padding: 5px;
+    margin:0px;
+}
+
+article {
+    background-color: #f9c594;
+    padding:5px;
+}
+
+article footer {
+    background-color: #d1ec8c;
+    padding: 2px;
+}

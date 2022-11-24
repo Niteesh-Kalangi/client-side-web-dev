@@ -1,0 +1,42 @@
+.styled-table {
+    border-collapse: collapse;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    margin: 25px 0px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 1000px;
+}
+.styled-table thead tr {
+    color: #ffffff;
+    text-align: left;
+    background-color: #005698;
+}
+.styled-table tbody tr {
+    border-bottom: 2px solid #005698;
+}
+.styled-table th,
+.styled-table td {
+    padding: 10px 12px;
+}
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #bdbdbd;
+}
+.formbody {
+    background-color: rgb(241, 33, 33);
+    padding:25px;
+}
+.formmain {
+    padding:10px;
+    background-color: rgb(0, 123, 255);
+    margin-left: auto;
+    margin-right:auto;
+}
+.formform {
+    background-color: white;
+    padding:12px;
+    margin-left:20%;
+    margin-right:20%;
+    color: rgb(241, 33, 33);
+}
