@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>14-my-form.html</title>
+      <link rel="stylesheet" type="text/css" href="css/table-form.css">
+   </head>
+   <body class="formbody">
+      <main class="formmain">
+         <h1 style="text-align:center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 33, 33);">My Form</h1>
+         <hr>
+         <form method="post" action="display-form-data.php" class="formform">
+        
+            <h2>Personal Information</h2>
+            <label for="fName">First Name:</label>
+            <input type="text" size="50" maxlength="12" name="fName" id="fName" placeholder="First Name"><br>
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName" size="50" maxlength="12" placeholder="Last Name"><br>
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email Address" ><br><br>
+            <label for="country">Country</label><br>
+            <select name="country" id="country">
+               <option value=""></option>
+               <option value="UnitedStates">United States</option>
+               <option value="Canada">Canada</option>
+               <option value="Mexico">Mexico</option>
+            </select>
+            <br><br>
+            <label for="gender"><b>Gender</b></label><br>
+            Male:<input        type="radio"      value="Male"       name="gender" id="gender" ><br>
+            Female:<input      type="radio"      value="Female"     name="gender" id="gender"><br>
+            Non-Binary:<input  type="radio"      value="Non-binary" name="gender" id="gender" ><br>
+            Prefer Not to Answer:<input type="radio" value="NA"     name="gender" id="gender"><br>
+            <br><br>
+            <label for="age"><b>Which age group are you?</b></label><br>
+            0-25:<input        type="radio"      value="0-25"      name="age" id="age" ><br>
+            25-50:<input      type="radio"      value="25-50"      name="age" id="age"><br>
+            50-75:<input  type="radio"      value="50-75"    name="age" id="age" ><br>
+            75+:<input type="radio" value="75+" name="age" id="age"><br>
+            <br><br>
+            <br><br>
+            <h2>Your Question</h2>
+            <label for="quote">Enter your question below:</label><br/>
+            <textarea rows="10" cols="50" name="comments" id="comments" wrap="physical" placeholder="What do you want to ask?"></textarea>
+            <br><br>
+            <br><br>
+            <button type="submit" >Submit Data</button>
+            <button type="reset" >Clear Form</button>
+            <br><br> 
+         </form>
+      </main>
+   </body>
+</html>

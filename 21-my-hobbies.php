@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>About Niteesh Kalangi</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.bundle.min.js"></script>  
+      <link rel="stylesheet" type="text/css" href="css/21-nav.css">
+   </head>
+   <body>
+      <main class="container-fluid">
+      <?php include 'inc/21-nav.php'; ?>
+        <?php include 'inc/21-header.php'; ?>
+         <div>
+            <h1>Niteesh Kalangi's Wonderful Pastimes!</h1>
+         </div>
+ 
+         <div class="row">
+            <div class="col-md-2" style="text-align: center; padding-top: 70px;">
+               <h2>Coding:</h2>
+            </div>
+            <div class="col-md-4">
+               <img src="img/niteesh-kalangi-3.jpg" alt="Not Available" height="200">
+            </div>
+            <div class="col-md-2" style="text-align: center; padding-top: 70px;">
+               <h2>Chess Tournaments:</h2>
+            </div>
+            <div class="col-md-2">
+               <img src="img/niteesh-kalangi-4.jpeg" alt="Not Available" height="200">
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-2" style="text-align: center; padding-top: 70px;">
+               <h2>Tennis as a Kid:</h2>
+            </div>
+            <div class="col-md-4">
+               <img src="img/niteesh-kalangi-5.jpeg" alt="Not Available" height="200">
+            </div>
+            <div class="col-md-2" style="text-align: center; padding-top: 70px;">
+               <h2>Doubles Partner:</h2>
+            </div>
+            <div class="col-md-4">
+               <img src="img/niteesh-kalangi-6.jpeg" alt="Not Available" height="200">
+            </div>
+          </div>
+
+
+
+          <div class="container-fluid p-5 my-5 border bg-white">
+            <h2>My interests:</h2>
+            <ol style="padding:5%; padding-right: 15%; font-family: sans-serif; color: darkred;">
+               <li>
+                  Playing Tennis
+                  <ul>
+                     <li>
+                        <p>
+                        I play on my high school's varsity tennis team every spring. It is one of my passions, and for me, it is a fun way to stay athletic and maintain my fitness! I have been playing ever since I was 4 years old, and in the picture above, I was 7 years old. I also play doubles.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <hr>
+               <li>
+                  Coding
+                  <ul>
+                     <li>
+                        <p>Coding has been a passion of mine ever since I took APCSA in my freshman year. I started learning to code using java, which was extremely tough, but after I got the hang of it, I fell in love with coding. Right now, I love coding websites, machine learning algorithms, etc.</p>
+                     </li>
+                  </ul>
+               </li>
+               <hr>
+               <li>
+                  Playing Chess
+                  <ul>
+                     <li>
+                        <p>
+                        I used to play chess competitively and it was my dream to be a grand master. However, as I chess was becoming more serious for me, it started to become more stressful than fun, so I ended up quitting competitive chess altogether. Now, I just enjoy a chess game every now and then casually.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+            </ol>
+
+
+            <?php include 'inc/21-footer.php'; ?>
+        
+
+
+
+         </div>
+      </main>
+   </body>
+</html>

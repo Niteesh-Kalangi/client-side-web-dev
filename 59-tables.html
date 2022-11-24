@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>59-tables.html</title>
+    <style>
+        body {background-color:lightgray;padding:20px;}
+        
+        table {
+            background-color: white;
+            margin:0px;
+            padding:20px;
+        }
+    
+        th {background-color: aqua;
+            border: 1px solid red;
+        }
+ 
+        table.wide {width:100%;}
+
+        .w25 {width:25%;}
+
+        .w5 {width:5px;}
+
+        table.alt tr:nth-child(even) {background-color: #ff0000;}
+        table.alt tr:nth-child(odd) {background-color: #fff;}
+       
+        .floatMe {float:left;}
+        p {padding:10px;}
+     
+        th, td {padding: 15px; border: 1px solid red;            
+        }   
+
+    </style>    
+</head>
+<body>
+    <main>
+        <h1>59-tables.html</h1>
+        <hr>
+        <table>
+            <tr>
+                <th>x</th>
+                <th>x</th>
+                <th>x</th>
+                <th>x</th>
+                <th>x</th>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>xxx</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>            
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>xxxxxxxxxx</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Using the Wide & alt classes</h2>
+        <table class="wide alt">
+            <tr>
+                <th class="w25">x</th>
+                <th class="w5">x</th>
+                <th>x</th>
+                <th>x</th>
+                <th class="w25">x</th>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td><img src="img/paul-gruhn.jpg" width="100" >  </td>
+                <td>x</td>
+                <td>x</td>
+            </tr>            
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td><img src="img/paul-gruhn.jpg" width="100" ></td>
+                <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi laborum similique repellendus aut reiciendis aperiam. Deleniti neque ipsam odio. Perferendis rem recusandae veniam eius porro suscipit doloremque minima nihil.</p></td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td><a href="51-media.html">Click Me</a></td>
+                <td>x</td>
+                <td><img src="img/paul-gruhn.jpg" width="100" ></td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <hr>
+        <table class="floatMe">
+            <tr>
+                   <th>#</th>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Homework</th>
+            </tr>
+        
+            <tr>
+             <td>1</td>
+             <td>Jan 12</td>
+             <td>Intro to HTML</td>
+             <td>Install Software</td>
+            </tr>
+        
+            <tr>
+             <td>2</td>
+             <td>Jan 19</td>
+             <td>Using FileZilla</td>
+             <td>Upload new HTML pages to server</td>
+            </tr>
+        
+            <tr>
+             <td>3</td>
+             <td>Jan 26</td>
+             <td>Learn HTML tags</td>
+             <td>about-me.html & my-hobbies.html</td>
+            </tr>
+         </table>  
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dolorum perspiciatis, quaerat deserunt impedit molestias porro ipsum magnam soluta sapiente aliquid dicta autem architecto, quia voluptatibus at itaque quas error!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae iste illo neque nihil eveniet quam, voluptates fugit molestiae praesentium. Nulla illum cumque deleniti ea rerum placeat ab veritatis incidunt.</p>
+        <hr>
+        <hr>
+        NEW TABLE
+        <table class="wide">
+          <tr>
+              <th rowspan="5">
+                  T<br>
+                  I<br>
+                  T<br>
+                  L<br>
+                  E<br>
+              </th>
+              <th class="w25">B</th>
+              <th class="w25">C</th>
+              <th class="w25">D</th>
+              <th class="w25">E</th>
+          </tr>
+          <tr>
+              <td>x</td>
+              <td>xxxxxx</td>
+              <td>xxxxxxxxzzzxx</td>
+              <td>xxxxx</td>
+          </tr>   
+          <tr>
+              <td>z</td> 
+              <td colspan="2">z</td>
+              <td>z</td>
+          </tr>
+          
+          <tr>
+              <td>z</td>   <td>z</td>
+              <td>z</td>  <td>z</td>
+          </tr>
+              <tr>
+              <td><img src="img/img-avatar.png"></td>  
+              <td colspan="3"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas saepe nam temporibus iste, maxime aspernatur ipsum vero nostrum reiciendis natus necessitatibus voluptatibus ducimus assumenda consectetur vel ab quae ullam? Nesciunt!</p></td>
+          </tr>
+        </table>
+        <hr>
+
+
+
+
+    </main>
+</body>
+</html>

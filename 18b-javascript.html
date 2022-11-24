@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>18a-javascript</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/18-script.css">
+      <script src="js/bootstrap.bundle.min.js"></script> 
+
+      <script type="text/javascript">
+        function validateEmail(theForm) {
+        if (/^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/.test(document.getElementById("Email").value)){
+        return(true);
+        }
+        alert("Invalid e-mail address! Please enter again carefully!.");
+        return(false);
+        }
+        </script>
+
+   </head>
+   <body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Niteesh Kalangi</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Education</a></li>
+            <li class="services">
+              <a href="/">Programming</a>
+            </li>
+            <li><a href="/">Hobbies</a></li>
+            <li><a href="/">Resume</a></li>
+          </div>
+        </ul>
+      </nav>
+      <main class="container-fluid">
+         
+        <div class="fcf-body">
+
+            <div id="fcf-form">
+            <h3 class="fcf-h3">Contact me</h3>
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" onSubmit="return validateEmail(this);">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+        
+                
+        
+            </form>
+            
+            </div>
+        
+        </div>
+
+        <div style="margin-top: 50px; margin-bottom:50px; text-align: center;">
+            <p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+</script>
+        </div>
+ 
+         
+      </main>
+   </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>18a-javascript</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/18-script.css">
+      <script src="js/bootstrap.bundle.min.js"></script> 
+
+   </head>
+   <body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Niteesh Kalangi</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Education</a></li>
+            <li class="services">
+              <a href="/">Programming</a>
+            </li>
+            <li><a href="/">Hobbies</a></li>
+            <li><a href="/">Resume</a></li>
+          </div>
+        </ul>
+      </nav>
+      <main class="container-fluid">
+         <h1 style="margin-top: 50px;">Image Slider</h1>
+         <div id="canvas">
+             <div class="arrow" ><img id="left" src="img/left-arrow.png" class="image"></div>
+             <div class="arrow" ><img id="right" src="img/right-arrow.png" class="image"></div>
+         </div>
+         <script src="js/18a-script.js"></script>
+         <script>
+
+            var images = new Array();
+            
+            function preloadImages(){
+            
+                for (var i=0; i < preloadImages.arguments.length; i++){
+            
+                     images[i] = new Image();
+            
+                    images[i].src = preloadImages.arguments[i];
+                    console.log(preloadImages.arguments[i]);
+            
+                }
+                console.log("done");
+            
+            }
+            
+            preloadImages("img/niteesh-kalangi.jpg", 'img/niteesh-kalangi-2.jpg', 'img/niteesh-kalangi-3.jpg','img/niteesh-kalangi-4.jpeg', 'img/niteesh-kalangi-5.jpeg');
+            
+            </script>
+         
+
+         <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+            <h1>Resume Download</h1>
+            <a onClick="openTab(this)" href="#" name="img/niteesh-kalangi-official-resume.pdf">Download Resume</a>
+            <script type="text/javascript">
+                function openTab(th)
+                {
+                    window.open(th.name,'_blank');
+                }
+            </script>
+         </div>
+     </body>
+ 
+         
+      </main>
+   </body>
+</html>

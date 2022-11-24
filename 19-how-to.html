@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-how-to.html</title>
+      <!--Bootstrap--> 
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.bundle.min.js"></script>  
+      <link rel="stylesheet" type="text/css" href="css/19-how-to.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark topnav">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" class = "navbar">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropbtn" aria-current="page" onclick="myFunction()">Dropdown</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+
+                  <script>
+                    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+                  </script>
+              </li>
+            </ul>
+          </div>
+          <div class="login-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Username" name="username">
+              <input type="text" placeholder="Password" name="psw">
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style="margin-top: 100px;">Image Slider</h1>
+        <div id="canvas">
+             <div class="arrow" ><img id="left" src="img/left-arrow.png" class="image"></div>
+             <div class="arrow" ><img id="right" src="img/right-arrow.png" class="image"></div>
+         </div>
+         <script src="js/18a-script.js"></script>
+         <script>
+
+            var images = new Array();
+            
+            function preloadImages(){
+            
+                for (var i=0; i < preloadImages.arguments.length; i++){
+            
+                     images[i] = new Image();
+            
+                    images[i].src = preloadImages.arguments[i];
+                    console.log(preloadImages.arguments[i]);
+            
+                }
+                console.log("done");
+            
+            }
+            
+            preloadImages("img/niteesh-kalangi.jpg", 'img/niteesh-kalangi-2.jpg', 'img/niteesh-kalangi-3.jpg','img/niteesh-kalangi-4.jpeg', 'img/niteesh-kalangi-5.jpeg');
+            
+            </script>
+
+
+<button class="btn info">Social Media</button>
+<button class="btn danger">Resume</button>
+</body>
+</html>

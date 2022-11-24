@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>60-forms.html</title>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <style>
+         body {background-color: silver;padding:12px;}
+         main {padding:10px;background-color: blanchedalmond}
+         form {background-color: whitesmoke;padding:12px;}
+      </style>
+   </head>
+   <body>
+      <main>
+         <h1>60-forms.html</h1>
+         <hr>
+         <form method="post" action="display-form-data.php">
+            Inside the form tag set here.
+            <hr>
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email Address" ><br>
+            <label for="fName">First Name:</label>
+            <input type="text" size="30" maxlength="12" name="fName" id="fName" placeholder="First Name"><br>
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName"><br><br>
+            <label for="passwd">Password:</label>
+            <input type="password" size="12" maxlength="12" id="passwd" name="passwd" placeholder="Enter Password"><br><br>
+            <label for="quote">Enter your comments below:</label><br/>
+            <textarea rows="10" cols="50" name="comments" id="comments" wrap="physical" placeholder="Enter your favorite quote!"></textarea>
+            <br><br>
+            <label for="gender"><b>Gender</b></label><br>
+            Male:<input        type="radio"      value="Male"       name="gender" id="gender" ><br>
+            Female:<input      type="radio"      value="Female"     name="gender" id="gender"><br>
+            Non-Binary:<input  type="radio"      value="Non-binary" name="gender" id="gender" ><br>
+            Prefer Not to Answer:<input type="radio" value="NA"     name="gender" id="gender"><br>
+            <br><br>
+            <label for="beatle"><b>Favorite Beatle</b></label><br>
+            Paul:<input        type="radio"      value="Paul"      name="beatle" id="beatle" ><br>
+            John:<input      type="radio"      value="John"      name="beatle" id="beatle"><br>
+            George:<input  type="radio"      value="George"    name="beatle" id="beatle" ><br>
+            Ringo:<input type="radio" value="Ringo" name="beatle" id="beatle"><br>
+            <br><br>
+            <label for="food2"><b>Favorite Food: </b></label><br>
+            Steak:<input type="checkbox" value="Steak" name="food2[]" id="food2[]"> 
+            Pizza:<input type="checkbox" value="Pizza" name="food2[]" id="food2[]"> 
+            Chicken:<input type="checkbox" value="Chicken" name="food2[]" id="food2[]"><br><br>
+            <label for="education">Select a Level of Education</label><br>
+            <select name="education" id="education">
+               <option value=""></option>
+               <option value="Jr.High">Jr.High</option>
+               <option value="HighSchool">HighSchool</option>
+               <option value="College">College</option>
+            </select>
+            <br><br>
+            <label for="TofD">Your Favorite Time of Day</label><br>
+            <select name="TofD" id="TofD" size="7" multiple>
+               <option value="Morning">Morning</option>
+               <option value="Day">Day</option>
+               <option value="Night">Night</option>
+            </select>
+            <br><br>
+            <br><br>
+            <button type="submit" >Submit Data</button>
+            <button type="reset" >Clear Form</button>
+            <br><br> 
+         </form>
+      </main>
+   </body>
+</html>
